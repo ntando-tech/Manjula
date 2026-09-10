@@ -1,0 +1,47 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image {
+    margin: 10px;
+    position: relative;
+}
+
+.info {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+}
+
+.ambroimagesize {
+    width: 900px;
+    height: 200px;
+}
+
+.imagesize {
+    width: 200px;
+    height: 200px;
+}
+
+
+.row::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: calc(50% - .5px);
+    background:#0b57a9;
+}
+.faqs .row {
+    position: relative;
+}
+.row::after {
+    display: none;
+}
